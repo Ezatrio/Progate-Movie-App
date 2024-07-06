@@ -1,0 +1,26 @@
+{
+  "cli": {
+    "version": ">= 10.0.3"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "API_URL": "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+          "API_ACCESS_TOKEN": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDFkMDU5MTlkNGIwOTViOTRiZDJhN2MxMDBkY2U5ZiIsIm5iZiI6MTcxOTM3NDQ3My4xMjkwMDIsInN1YiI6IjY1NzE4ZTJlN2ViNWYyMDE0ZmVhNzE1NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0X3mKQYVgESc0hyehtYbJfRNZzN4dEPOZ38HKWnwOuE"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
